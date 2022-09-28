@@ -9,6 +9,7 @@
   </head>
   <body onload="initGame()">
     <div class="main-box">
+      <div class="best-time">Best Time: <span></span></div>
       <div class="timer-box">
         <p class="timer">
           <span class="seconds">00</span>:<span class="tens">00</span>
@@ -25,10 +26,16 @@
           Hard (144)
         </button>
       </div>
+      <button onclick="toggleHint()" class="hint-btn">Toggle Hint</button>
+      <div class="hint">HINTS: <span></span></div>
+      <div class="life">LIFE: <span></span></div>
+      <button onclick="initGame()" class="smile">&#128512</button>
       <table class="main-table">
         <tbody class="board"></tbody>
       </table>
     </div>
+
+    <footer>Omer Mazig</footer>
 
     <script src="mine-sweeper.js"></script>
   </body>
